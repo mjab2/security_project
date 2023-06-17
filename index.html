@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Secure File Upload</title>
+</head>
+<body>
+<h1>Secure File Upload</h1>
+This web application allows you to securely upload files to the company.
+
+To do so, please follow these steps:
+<ol>
+
+<hr>
+
+<h2>Download Company's RSA Public Key</h2>
+To download the company's RSA public key, please click the following button:
+
+<button  type="button" onclick="window.location='/companys-rsa.asc'">Download Public Key</button>
+
+<hr>
+
+<h2>Upload Shared Secret Key</h2>
+To upload a shared secret key, please click the following button:
+
+ <form action="upload.php" method="post" enctype="multipart/form-data">
+  <label for="file">Select file to upload:</label><br>
+  <input type="file" name="file" id="file"><br><br>
+  <input type="submit" value="Upload File">
+ </form>
+
+<hr>
+
+<h2>Upload File(s)</h2>
+To upload file(s), please click the following button:
+
+ <form action="upload.php" method="post" enctype="multipart/form-data">
+  <label for="file">Select file to upload:</label><br>
+  <input type="file" name="file" id="file"><br><br>
+  <input type="submit" value="Upload File">
+ </form>
+</body>
+</html>
+
